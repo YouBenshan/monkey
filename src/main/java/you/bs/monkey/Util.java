@@ -1,4 +1,4 @@
-package org.bs.monkey;
+package you.bs.monkey;
 
 public class Util {
 

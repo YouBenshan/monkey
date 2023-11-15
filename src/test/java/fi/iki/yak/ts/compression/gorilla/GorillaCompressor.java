@@ -14,12 +14,11 @@ public class GorillaCompressor {
     private static final int DELTAD_7_MASK = 0x02 << 7;
     private static final int DELTAD_9_MASK = 0x06 << 9;
     private static final int DELTAD_12_MASK = 0x0E << 12;
+    private final BitOutput out;
+    private final ValueCompressor valueCompressor;
     private long storedTimestamp = 0;
     private int storedDelta = 0;
     private long blockTimestamp = 0;
-    private final BitOutput out;
-
-    private final ValueCompressor valueCompressor;
 
     public GorillaCompressor(long timestamp, BitOutput output) {
         this(timestamp, output, new LastValuePredictor());

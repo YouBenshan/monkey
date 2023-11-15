@@ -1,4 +1,4 @@
-package org.bs.monkey;
+package you.bs.monkey;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,6 +9,9 @@ import java.util.Map;
 import java.util.Random;
 import java.util.stream.IntStream;
 
+/**
+ * @author You Benshan
+ */
 public class FloatCompressorTest {
     private void test(float[] ds) {
         byte[] bytes = FloatCompressor.compress(ds);

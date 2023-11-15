@@ -1,8 +1,11 @@
-package org.bs.monkey;
+package you.bs.monkey;
 
 import java.nio.ByteBuffer;
 import java.nio.LongBuffer;
 
+/**
+ * @author You Benshan
+ */
 public class LongArrayInput {
     private final long[] longArray;
     private int position = 0;

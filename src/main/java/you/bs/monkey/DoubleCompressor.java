@@ -1,5 +1,8 @@
-package org.bs.monkey;
+package you.bs.monkey;
 
+/**
+ * @author You Benshan
+ */
 public class DoubleCompressor {
     private final LongArrayOutput out;
     private int size = 0;
@@ -51,8 +54,8 @@ public class DoubleCompressor {
             long diff = valueBits ^ storedVal;
             int trailingZeros = Long.numberOfTrailingZeros(diff);
             out.writeBit();
-            out.writeBits(trailingZeros, Util.MAX_LONG_BIT_SIZE );
-            if(Util.LONG_BIT_SIZE[trailingZeros]>0){
+            out.writeBits(trailingZeros, Util.MAX_LONG_BIT_SIZE);
+            if (Util.LONG_BIT_SIZE[trailingZeros] > 0) {
                 int leadingZeros = Long.numberOfLeadingZeros(diff);
                 out.writeBits(leadingZeros, Util.LONG_BIT_SIZE[trailingZeros]);
 

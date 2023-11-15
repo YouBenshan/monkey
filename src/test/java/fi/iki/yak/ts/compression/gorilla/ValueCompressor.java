@@ -9,11 +9,10 @@ import fi.iki.yak.ts.compression.gorilla.predictors.LastValuePredictor;
  * @author Michael Burman
  */
 public class ValueCompressor {
-    private int storedLeadingZeros = Integer.MAX_VALUE;
-    private int storedTrailingZeros = 0;
-
     private final Predictor predictor;
     private final BitOutput out;
+    private int storedLeadingZeros = Integer.MAX_VALUE;
+    private int storedTrailingZeros = 0;
 
     public ValueCompressor(BitOutput out) {
         this(out, new LastValuePredictor());

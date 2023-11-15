@@ -9,13 +9,13 @@ package fi.iki.yak.ts.compression.gorilla;
 public class Compressor {
 
     public final static short FIRST_DELTA_BITS = 27;
+    private final BitOutput out;
     private int storedLeadingZeros = Integer.MAX_VALUE;
     private int storedTrailingZeros = 0;
     private long storedVal = 0;
     private long storedTimestamp = 0;
     private long storedDelta = 0;
     private long blockTimestamp = 0;
-    private final BitOutput out;
 
     // We should have access to the series?
     public Compressor(long timestamp, BitOutput output) {

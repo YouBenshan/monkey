@@ -7,17 +7,14 @@ package fi.iki.yak.ts.compression.gorilla;
  */
 public class Decompressor {
 
+    private final BitInput in;
     private int storedLeadingZeros = Integer.MAX_VALUE;
     private int storedTrailingZeros = 0;
     private long storedVal = 0;
     private long storedTimestamp = 0;
     private long storedDelta = 0;
-
     private long blockTimestamp = 0;
-
     private boolean endOfStream = false;
-
-    private final BitInput in;
 
     public Decompressor(BitInput input) {
         in = input;

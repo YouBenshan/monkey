@@ -1,6 +1,5 @@
-package org.bs.monkey;
+package you.bs.monkey;
 
-import org.bs.monkey.benchmark.GorillaUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,6 +9,9 @@ import java.util.Map;
 import java.util.Random;
 import java.util.stream.IntStream;
 
+/**
+ * @author You Benshan
+ */
 public class DoubleCompressorTest {
     private void test(double[] ds) {
         byte[] bytes = DoubleCompressor.compress(ds);

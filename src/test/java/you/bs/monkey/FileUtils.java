@@ -1,4 +1,4 @@
-package org.bs.monkey;
+package you.bs.monkey;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
+/**
+ * @author You Benshan
+ */
 public class FileUtils {
     private static final Pattern pattern = Pattern.compile("-?\\d+(\\.\\d+)?");
 

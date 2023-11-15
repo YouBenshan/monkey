@@ -1,8 +1,10 @@
-package org.bs.monkey;
+package you.bs.monkey;
 
 import java.nio.ByteBuffer;
-import java.nio.LongBuffer;
 
+/**
+ * @author You Benshan
+ */
 public class LongArrayOutput {
     private static final int DEFAULT_ALLOCATION = 256;
 
@@ -36,16 +38,16 @@ public class LongArrayOutput {
             enoughLongArray();
             longArray[position++] = lB;
             bitsLeft = Long.SIZE - 1;
-            lB = 1L<<bitsLeft;
+            lB = 1L << bitsLeft;
         } else {
             bitsLeft--;
-            lB|=1L<<bitsLeft;
+            lB |= 1L << bitsLeft;
         }
     }
 
     private void enoughLongArray() {
         if (longArray.length == position) {
-            long[] largerArray = new long[longArray.length<<1];
+            long[] largerArray = new long[longArray.length << 1];
             System.arraycopy(longArray, 0, largerArray, 0, longArray.length);
             longArray = largerArray;
         }

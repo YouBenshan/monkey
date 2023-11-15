@@ -1,5 +1,8 @@
-package org.bs.monkey;
+package you.bs.monkey;
 
+/**
+ * @author You Benshan
+ */
 public class FloatCompressor {
     private final LongArrayOutput out;
     private int size = 0;
