@@ -4,7 +4,7 @@ Monkey is a compression method that inspired
 by ["Gorilla: A Fast, Scalable, In-Memory Time Series Database"](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf).
 
 Normally, Monkey has better compression ratio than Gorilla.
-Test data is from https://data.cityofchicago.org/.
+
 
 | File Name                                      | Monkey size | Grilla Size | Monkey/Gorilla      |
 |------------------------------------------------|-------------|-------------|---------------------|
@@ -13,4 +13,5 @@ Test data is from https://data.cityofchicago.org/.
 | stream-gages.csv                               | 	3973608	   | 4243320     | 	0.9364384491388819 |
 | Beach_Weather_Stations_-_Automated_Sensors.csv | 	4266648    | 	5142088    | 	0.829750093736241  |
 
+Test data is from https://data.cityofchicago.org/.
 The Java base implementation is inspired by [gorilla-tsc](https://github.com/burmanm/gorilla-tsc).
