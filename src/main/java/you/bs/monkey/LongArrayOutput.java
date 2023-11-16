@@ -8,7 +8,6 @@ import java.nio.ByteBuffer;
 public class LongArrayOutput {
     private static final int DEFAULT_ALLOCATION = 256;
 
-
     private long[] longArray;
     private int position = 0;
     private long lB = 0L;

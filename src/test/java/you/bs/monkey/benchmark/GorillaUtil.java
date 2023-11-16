@@ -8,6 +8,9 @@ import fi.iki.yak.ts.compression.gorilla.ValueDecompressor;
 import java.nio.ByteBuffer;
 import java.nio.LongBuffer;
 
+/**
+ * @author You Benshan
+ */
 public class GorillaUtil {
     public static byte[] compress(double[] ds) {
         LongArrayOutput output = new LongArrayOutput();

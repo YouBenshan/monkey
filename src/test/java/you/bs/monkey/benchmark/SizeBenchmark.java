@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.Map;
 
+/**
+ * @author You Benshan
+ */
 public class SizeBenchmark {
 
     @Test
