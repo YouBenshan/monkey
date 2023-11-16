@@ -6,7 +6,7 @@ Monkey is focus on floating-point compression, including 32-bit and 64-bit.
 
 Normally, Monkey has better compression ratio than Gorilla.
 
-Table: 64-bit floating-point compression.
+Table: 64-bit floating-point compression comparison
 | File Name | Monkey size | Grilla Size | Monkey/Gorilla |
 |------------------------------------------------|-------------|-------------|---------------------|
 | Beach_Water_Quality_-_Automated_Sensors.csv | 787352 | 878544 | 0.896200987087727 |
