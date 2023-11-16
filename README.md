@@ -15,4 +15,5 @@ Table: 64-bit floating-point compression.
 | Beach_Weather_Stations_-_Automated_Sensors.csv | 4266648 | 5142088 | 0.829750093736241 |
 
 Test data is from https://data.cityofchicago.org/.
+
 The Java base implementation is inspired by [gorilla-tsc](https://github.com/burmanm/gorilla-tsc).
