@@ -10,6 +10,9 @@ public class Util {
     static final int[] LONG_BIT_SIZE = bitSize(Long.SIZE);
     static final int[] INTEGER_BIT_SIZE = bitSize(Integer.SIZE);
 
+    private Util() {
+    }
+
     private static long[] maskArray() {
         long[] ans = new long[Long.SIZE];
         long mask = 1;

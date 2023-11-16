@@ -55,7 +55,6 @@ public class SizeBenchmark {
     @Test
     public void testTime() throws IOException, URISyntaxException, InterruptedException {
         Map<String, double[]> map = FileUtils.datas();
-        Thread.sleep(1000L);
         int t = 200;
         long start, d;
         start = System.currentTimeMillis();
@@ -68,7 +67,6 @@ public class SizeBenchmark {
         d = System.currentTimeMillis() - start;
         System.out.println("Gorilla:    " + d);
 
-        Thread.sleep(1000L);
         start = System.currentTimeMillis();
         for (int i = 0; i < t; i++) {
             for (Map.Entry<String, double[]> e : map.entrySet()) {
