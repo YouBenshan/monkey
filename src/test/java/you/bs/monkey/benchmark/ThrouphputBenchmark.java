@@ -60,7 +60,7 @@ public class ThrouphputBenchmark {
     public void gorillaFileTest() {
         for (double[] ds : map.values()) {
             byte[] bytes = GorillaUtil.compress(ds);
-//            GorillaUtil.decompress(bytes, e.getValue().length);
+            GorillaUtil.decompress(bytes, ds.length);
         }
     }
 
