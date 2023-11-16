@@ -2,7 +2,6 @@
 
 Monkey is a compression method that inspired
 by ["Gorilla: A Fast, Scalable, In-Memory Time Series Database"](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf).
-
 Monkey is focus on floating-point compression, including 32-bit and 64-bit.
 
 Normally, Monkey has better compression ratio than Gorilla.
