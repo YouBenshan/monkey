@@ -3,6 +3,7 @@ package you.bs.monkey.benchmark;
 import org.openjdk.jmh.annotations.*;
 import you.bs.monkey.DoubleCompressor;
 import you.bs.monkey.FileUtils;
+import you.bs.monkey.util.GorillaUtil;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
