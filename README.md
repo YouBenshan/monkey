@@ -19,3 +19,8 @@ Table: 64-bit floating-point compression comparison
 Test data is from https://data.cityofchicago.org/.
 
 The Java base implementation is inspired by [gorilla-tsc](https://github.com/burmanm/gorilla-tsc).
+
+Test your data:
+1. Make a csv file, one float/double per line;
+2. Put the csv file in folder src/test/resources/data;
+3. Run test: src/test/java/you/bs/monkey/benchmark/SizeBenchmark.java
