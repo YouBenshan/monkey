@@ -8,7 +8,7 @@ on:
     types: [created]
 
 jobs:
-  build:
+  release:
 
     runs-on: ubuntu-latest
     permissions:
@@ -28,9 +28,9 @@ jobs:
         gpg_private_key: GPG_PRIVATE_KEY 
         gpg_passphrase: GPG_PASSPHRASS
     - name: Publish package
-      run: mvn --batch-mode deploy
       env:
         MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
         MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
         GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
         GPG_PASSPHRASS: ${{ secrets.GPG_PASSPHRASS }}
+
