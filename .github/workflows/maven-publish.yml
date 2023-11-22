@@ -28,11 +28,9 @@ jobs:
     - name: Publish package
       uses: samuelmeuli/action-maven-publish@v1
       with:
-        gpg_private_key: GPG_PRIVATE_KEY 
-        gpg_passphrase: GPG_PASSPHRASS
+        gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }} 
+        gpg_passphrase: ${{ secrets.GPG_PASSPHRASS }}
       env:
         MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
         MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
-        GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-        GPG_PASSPHRASS: ${{ secrets.GPG_PASSPHRASS }}
 
