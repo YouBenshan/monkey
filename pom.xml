@@ -23,6 +23,7 @@
 
     <scm>
         <url>https://github.com/YouBenshan/monkey</url>
+        <developerConnection>scm:git:https://github.com/YouBenshan/monkey/tree/main/</developerConnection>
         <connection>https://github.com/YouBenshan/monkey.git</connection>
     </scm>
     <properties>
