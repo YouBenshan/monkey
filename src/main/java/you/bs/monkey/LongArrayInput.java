@@ -47,10 +47,10 @@ public class LongArrayInput {
     }
 
     long meaningful(int meaningfulSize) {
-        return switch (meaningfulSize) {
-            case -1 -> 1;
-            case 0 -> 3;
-            default -> (1L << meaningfulSize | getLong(meaningfulSize)) << 1 | 1;
-        };
+         switch (meaningfulSize) {
+             case -1: return 1;
+             case 0: return 3;
+             default: return (1L << meaningfulSize | getLong(meaningfulSize)) << 1 | 1;
+        }
     }
 }

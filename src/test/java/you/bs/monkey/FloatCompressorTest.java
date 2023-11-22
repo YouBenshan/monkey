@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
 public class FloatCompressorTest {
     private void test(float[] ds) {
         byte[] bytes = FloatCompressor.compress(ds);
-        System.out.println(ds.length * Float.BYTES + "-->" + bytes.length);
+//        System.out.println(ds.length * Float.BYTES + "-->" + bytes.length);
         float[] doubles = FloatCompressor.decompress(bytes);
         Assert.assertArrayEquals(ds, doubles, 1e-15F);
     }
