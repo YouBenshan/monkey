@@ -2,7 +2,7 @@
 
 Monkey is focus on lossless floating-point compression, including 32-bit and 64-bit.
 
-Monkey is inspired
+Monkey algorithm is inspired
 by ["Gorilla: A Fast, Scalable, In-Memory Time Series Database"](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf).
 Gorilla has been well known and used in most TimeSeries DBMS such as InfluxDB and Apache IoTDB.
 
