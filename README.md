@@ -23,4 +23,4 @@ The Java base implementation is inspired by [gorilla-tsc](https://github.com/bur
 Test your data:
 1. Make a csv file, one float/double per line;
 2. Put the csv file in folder src/test/resources/data;
-3. Run test: src/test/java/you/bs/monkey/benchmark/SizeBenchmark.java
+3. Run test: SizeBenchmark.java
