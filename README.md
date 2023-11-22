@@ -1,10 +1,10 @@
 # Monkey
 
-Monkey is a compression method that inspired
+Monkey is focus on lossless floating-point compression, including 32-bit and 64-bit.
+
+Monkey algorithm is inspired
 by ["Gorilla: A Fast, Scalable, In-Memory Time Series Database"](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf).
 Gorilla has been well known and used in most TimeSeries DBMS such as InfluxDB and Apache IoTDB.
-
-Monkey is also focus on lossless floating-point compression, including 32-bit and 64-bit.
 
 Normally, Monkey has better compression ratio than Gorilla.
 
@@ -23,4 +23,4 @@ The Java base implementation is inspired by [gorilla-tsc](https://github.com/bur
 Test your data:
 1. Make a csv file, one float/double per line;
 2. Put the csv file in folder src/test/resources/data;
-3. Run test: src/test/java/you/bs/monkey/benchmark/SizeBenchmark.java
+3. Run test: SizeBenchmark.java
