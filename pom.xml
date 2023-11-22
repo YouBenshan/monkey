@@ -20,7 +20,14 @@
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
-
+    <developers>
+        <developer>
+            <name>youbenshan</name>
+            <email>85398921@qq.com</email>
+            <organization>youbenshan</organization>
+            <organizationUrl>https://github.com/YouBenshan</organizationUrl>
+        </developer>
+    </developers>
     <scm>
         <url>https://github.com/YouBenshan/monkey</url>
         <developerConnection>scm:git:https://github.com/YouBenshan/monkey/tree/main/</developerConnection>
@@ -96,6 +103,20 @@
                         <id>attach-javadocs</id>
                         <goals>
                             <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
                         </goals>
                     </execution>
                 </executions>
