@@ -1,8 +1,8 @@
-package you.bs.monkey.util;
+package io.github.youbenshan.monkey.util;
 
 import org.junit.Assert;
 import org.junit.Test;
-import you.bs.monkey.FileUtils;
+import io.github.youbenshan.monkey.FileUtils;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

@@ -1,4 +1,4 @@
-package you.bs.monkey.util;
+package io.github.youbenshan.monkey.util;
 
 import fi.iki.yak.ts.compression.gorilla.LongArrayInput;
 import fi.iki.yak.ts.compression.gorilla.LongArrayOutput;

@@ -1,10 +1,9 @@
-package you.bs.monkey.benchmark;
+package io.github.youbenshan.monkey.benchmark;
 
-import org.junit.Assert;
+import io.github.youbenshan.monkey.DoubleCompressor;
+import io.github.youbenshan.monkey.FileUtils;
+import io.github.youbenshan.monkey.util.GorillaUtil;
 import org.junit.Test;
-import you.bs.monkey.DoubleCompressor;
-import you.bs.monkey.FileUtils;
-import you.bs.monkey.util.GorillaUtil;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

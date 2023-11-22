@@ -1,4 +1,4 @@
-package you.bs.monkey;
+package io.github.youbenshan.monkey;
 
 import org.junit.Assert;
 import org.junit.Test;

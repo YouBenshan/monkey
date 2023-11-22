@@ -1,4 +1,4 @@
-package you.bs.monkey;
+package io.github.youbenshan.monkey;
 
 public class Util {
 
