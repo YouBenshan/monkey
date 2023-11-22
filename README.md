@@ -23,7 +23,34 @@ Test data is from https://data.cityofchicago.org/.
 
 The Java base implementation is inspired by [gorilla-tsc](https://github.com/burmanm/gorilla-tsc).
 
+
 ## Test your data:
 1. Make a csv file, one float/double per line;
 2. Put the csv file in folder src/test/resources/data;
 3. Run test: SizeBenchmark.java
+
+
+## Use Monkey
+1 import in pom.xml
+   
+    <dependency>
+        <groupId>io.github.youbenshan</groupId>
+        <artifactId>monkey</artifactId>
+        <version>1.0</version>
+    </dependency>
+
+2 batch compress
+
+    byte[] bytes = DoubleCompressor.compress(ds);
+    
+3 stream compress
+
+    DoubleCompressor compressor = new DoubleCompressor();
+    for (double value : values) {
+        compressor.compressOne(value);
+    }
+    return compressor.finish();
+
+4 decompress
+      
+    double[] doubles = DoubleCompressor.decompress(bytes);
