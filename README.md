@@ -4,7 +4,7 @@
 Monkey is a lossless compression algorithm for floating-point, including 32-bit and 64-bit.
 
 ## Comparation with Gorilla
-Monkey has better compression ratio than Gorilla.
+Monkey gets better compression ratio and higher throughput performance than Gorilla.
 
 Monkey algorithm is inspired
 by ["Gorilla: A Fast, Scalable, In-Memory Time Series Database"](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf).
@@ -29,7 +29,7 @@ The Java base implementation is inspired by [gorilla-tsc](https://github.com/bur
 2. Put the csv file in folder src/test/resources/data;
 3. Run test: SizeBenchmark.java
 
-It's very thankful for Test Data Set sharing.
+**It's very thankful for Test Data Set sharing.**
 
 ## Use Monkey
 1 import in pom.xml
