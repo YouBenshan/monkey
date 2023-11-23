@@ -39,11 +39,11 @@ The Java base implementation is inspired by [gorilla-tsc](https://github.com/bur
         <version>1.0</version>
     </dependency>
 
-2 batch compress
+2 batch compression
 
     byte[] bytes = DoubleCompressor.compress(ds);
     
-3 stream compress
+3 stream compression
 
     DoubleCompressor compressor = new DoubleCompressor();
     for (double value : values) {
@@ -51,6 +51,6 @@ The Java base implementation is inspired by [gorilla-tsc](https://github.com/bur
     }
     return compressor.finish();
 
-4 decompress
+4 decompression
       
     double[] doubles = DoubleCompressor.decompress(bytes);
