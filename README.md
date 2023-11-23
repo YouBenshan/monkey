@@ -29,6 +29,7 @@ The Java base implementation is inspired by [gorilla-tsc](https://github.com/bur
 2. Put the csv file in folder src/test/resources/data;
 3. Run test: SizeBenchmark.java
 
+It's very thankful for Test Data Set sharing.
 
 ## Use Monkey
 1 import in pom.xml
