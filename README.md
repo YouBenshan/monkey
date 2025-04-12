@@ -12,7 +12,7 @@ Gorilla has been wildly used in TimeSeries DBMS such as InfluxDB and Apache IoTD
 
 
 Table: 64-bit floating-point compression comparison
-| File Name | Monkey Size | Grilla Size | **Monkey/Gorilla** |
+| File Name | Monkey Size | Gorilla Size | **Monkey/Gorilla** |
 |------------------------------------------------|-------------|-------------|---------------------|
 | Beach_Water_Quality_-_Automated_Sensors.csv | 787352 | 878544 | 0.896200987087727 |
 | stream-gages-1.csv | 6452072 | 7672992 | 0.8408808454381289 |
