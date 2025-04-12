@@ -23,11 +23,13 @@ Test data is from https://data.cityofchicago.org/.
 
 The Java base implementation is inspired by [gorilla-tsc](https://github.com/burmanm/gorilla-tsc).
 
-
-## Test your data:
+## Test exist data
+1. Run test: SizeBenchmark.java & ThrouphputBenchmark.java
+   
+## Test your own data
 1. Make a csv file, one float/double per line;
 2. Put the csv file in folder src/test/resources/data;
-3. Run test: SizeBenchmark.java
+3. Run test: SizeBenchmark.java & ThrouphputBenchmark.java
 
 **It's very thankful for Test Data Set sharing.**
 
